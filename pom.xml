@@ -54,9 +54,11 @@
                 <to>
                     <image>registry.gitlab.com/aboullaite/jib-springboot</image>
                 </to>
-                <jvmFlags>
-                    <jvmFlag>-Xms512m</jvmFlag>
-                </jvmFlags>
+                <container>
+                    <jvmFlags>
+                        <jvmFlag>-Xms512m</jvmFlag>
+                    </jvmFlags>
+                </container>
                 <ports>
                     <port>8080</port>
                 </ports>
