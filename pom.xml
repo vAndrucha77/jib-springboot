@@ -43,6 +43,25 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>0.9.7</version>
+                <configuration>
+                <from>
+                    <image>gcr.io/distroless/java</image>
+                </from>
+                <to>
+                    <image>registry.gitlab.com/aboullaite/jib-springboot</image>
+                </to>
+                <jvmFlags>
+                    <jvmFlag>-Xms512m</jvmFlag>
+                </jvmFlags>
+                <ports>
+                    <port>8080</port>
+                </ports>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
