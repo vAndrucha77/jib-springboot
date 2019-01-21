@@ -12,6 +12,11 @@ pipeline{
     stage('Build') {
         steps{
             sh 'mvn clean package -DskipTests'
+         }
+    }
+
+    stage('Package') {
+        steps{
             docker.build("aboullaite/sb-app")
          }
     }
