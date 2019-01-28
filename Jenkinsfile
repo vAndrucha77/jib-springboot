@@ -1,4 +1,6 @@
 
+def app
+
 pipeline{
     agent any
     stages{
@@ -17,7 +19,7 @@ pipeline{
 
     stage('Package') {
         steps{
-            docker.build("aboullaite/sb-app")
+            app=docker.build("aboullaite/sb-app")
          }
     }
 
