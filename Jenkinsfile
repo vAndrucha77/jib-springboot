@@ -1,7 +1,6 @@
 
-def app
-
 pipeline{
+    def app 
     agent any
     stages{
         stage('Checkout') {
@@ -19,7 +18,7 @@ pipeline{
 
     stage('Package') {
         steps{
-            app=docker.build("aboullaite/sb-app")
+            app = docker.build("aboullaite/sb-app")
          }
     }
 
